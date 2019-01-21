@@ -30,6 +30,7 @@
         {
             this.btnBox = new System.Windows.Forms.Button();
             this.btnRight = new System.Windows.Forms.Button();
+            this.btnPerspective = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnBox
@@ -52,11 +53,22 @@
             this.btnRight.UseVisualStyleBackColor = true;
             this.btnRight.Click += new System.EventHandler(this.btnRight_Click);
             // 
+            // btnPerspective
+            // 
+            this.btnPerspective.Location = new System.Drawing.Point(28, 78);
+            this.btnPerspective.Name = "btnPerspective";
+            this.btnPerspective.Size = new System.Drawing.Size(75, 23);
+            this.btnPerspective.TabIndex = 2;
+            this.btnPerspective.Text = "Perspective";
+            this.btnPerspective.UseVisualStyleBackColor = true;
+            this.btnPerspective.Click += new System.EventHandler(this.btnPerspective_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnPerspective);
             this.Controls.Add(this.btnRight);
             this.Controls.Add(this.btnBox);
             this.Name = "Form1";
@@ -69,6 +81,7 @@
 
         private System.Windows.Forms.Button btnBox;
         private System.Windows.Forms.Button btnRight;
+        private System.Windows.Forms.Button btnPerspective;
     }
 }
 
