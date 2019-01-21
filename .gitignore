@@ -4,3 +4,5 @@
 
 /ThreeDMaths/obj/Debug
 /.vs/ThreeDMaths/v15/Server/sqlite3
+/ThreeDMaths/bin/Debug
+/packages/System.ValueTuple.4.5.0
