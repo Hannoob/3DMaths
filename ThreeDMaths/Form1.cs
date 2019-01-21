@@ -34,6 +34,8 @@ namespace ThreeDMaths
 
         private void RenderCoordinates()
         {
+            var brushSize = 10;
+
             SolidBrush myBrush = new SolidBrush(Color.Yellow);
             Graphics formGraphics;
             formGraphics = this.CreateGraphics();
@@ -50,11 +52,11 @@ namespace ThreeDMaths
                     var distance = cameraDistance + z;
                     var warpedX = x / (distance* warping);
                     var warpedY = y / (distance* warping);
-                    formGraphics.FillRectangle(myBrush, new Rectangle((int)warpedX + centerX, (int)warpedY + centerY, 1, 1));
+                    formGraphics.FillRectangle(myBrush, new Rectangle((int)warpedX + centerX, (int)warpedY + centerY, brushSize, brushSize));
                 }
                 else
                 {
-                    formGraphics.FillRectangle(myBrush, new Rectangle((int)x + centerX, (int)y + centerY, 1, 1));
+                    formGraphics.FillRectangle(myBrush, new Rectangle((int)x + centerX, (int)y + centerY, brushSize, brushSize));
                 }
             });
 
@@ -102,6 +104,7 @@ namespace ThreeDMaths
         private void btnPerspective_Click(object sender, EventArgs e)
         {
             perspective = !perspective;
+            RenderCoordinates();
         }
     }
 }
