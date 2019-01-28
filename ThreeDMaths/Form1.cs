@@ -86,9 +86,6 @@ namespace ThreeDMaths
             {
                 var (x, y, z) = c;
 
-                var centerX = this.Height/2;
-                var centerY = this.Width/2;
-
                 var angle = ConvertToRadians(10);
 
                 var newX = (x) * Math.Cos(angle) - (z) * Math.Sin(angle);

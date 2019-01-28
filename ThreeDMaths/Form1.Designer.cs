@@ -35,7 +35,7 @@
             // 
             // btnBox
             // 
-            this.btnBox.Location = new System.Drawing.Point(28, 49);
+            this.btnBox.Location = new System.Drawing.Point(12, 11);
             this.btnBox.Name = "btnBox";
             this.btnBox.Size = new System.Drawing.Size(75, 23);
             this.btnBox.TabIndex = 0;
@@ -45,7 +45,7 @@
             // 
             // btnRight
             // 
-            this.btnRight.Location = new System.Drawing.Point(433, 321);
+            this.btnRight.Location = new System.Drawing.Point(12, 69);
             this.btnRight.Name = "btnRight";
             this.btnRight.Size = new System.Drawing.Size(75, 23);
             this.btnRight.TabIndex = 1;
@@ -55,7 +55,7 @@
             // 
             // btnPerspective
             // 
-            this.btnPerspective.Location = new System.Drawing.Point(28, 78);
+            this.btnPerspective.Location = new System.Drawing.Point(12, 40);
             this.btnPerspective.Name = "btnPerspective";
             this.btnPerspective.Size = new System.Drawing.Size(75, 23);
             this.btnPerspective.TabIndex = 2;
