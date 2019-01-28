@@ -1,5 +1,5 @@
 
-# A Tale of math and swastikas
+# A tale of 3D shapes and rounding issues
 
 This is simply a little challenge I set myself to see if I am clever enough to put the math together in order to render a set of points in 3D space from scratch.
 The short answer is, sort of.
