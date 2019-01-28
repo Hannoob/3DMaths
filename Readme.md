@@ -1,9 +1,11 @@
 
 # A tale of 3D shapes and rounding issues
 
+DISCLAIMER: This is not meant to be offensive to any person or group, and should be read as a (somewhat) educational and (barely) entertaining write-up of my experience.
+
 This is simply a little challenge I set myself to see if I am clever enough to put the math together in order to render a set of points in 3D space from scratch.
 The short answer is, sort of.
-The long answer is more of an epic tale of integers, doubles, trigonometry, swastikas, and a key piece of math that unlocked the entire puzzle.
+The long answer is more of an epic tale of integers, doubles, trigonometry, aswastikas, and a key piece of math that unlocked the entire puzzle.
 
 ## Chapter 1 - Creating our little world
 
@@ -12,7 +14,7 @@ The first thing I did was to create a list that would represent my pixels in 3D 
 Since the screen pixels are essentially finite whole numbers, I made the (very poor) decision to represent my data as a list of integers:
 
 ```csharp
-private List<(double, double, double)> coordinates;
+private List<(int, int, int)> coordinates;
 ```
 
 Next, I added a simple button that would add some points to the coordinates list, in the shape of a small cube:
@@ -20,7 +22,7 @@ Next, I added a simple button that would add some points to the coordinates list
 ```csharp
 private void btnBox_Click(object sender, EventArgs e)
 {
-    coordinates = new List<(double, double, double)>();
+    coordinates = new List<(int, int, int)>();
 
     coordinates.Add((5, 5, 5));
     coordinates.Add((5, -5, 5));
@@ -44,7 +46,7 @@ private void RenderCoordinates()
 {
     var brushSize = 10;
 
-    SolidBrush myBrush = new SolidBrush(Color.Yellow);
+    SolidBrush myBrush = new SolidBrush(Color.Red);
     Graphics formGraphics;
     formGraphics = this.CreateGraphics();
 
@@ -54,7 +56,7 @@ private void RenderCoordinates()
     coordinates.ForEach(c =>
     {
         var (x, y, z) = c;
-        formGraphics.FillRectangle(myBrush, new Rectangle((int)x + centerX, (int)y + centerY, brushSize, brushSize));
+        formGraphics.FillRectangle(myBrush, new Rectangle(x + centerX, y + centerY, brushSize, brushSize));
     });
 
     myBrush.Dispose();
