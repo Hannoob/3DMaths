@@ -118,7 +118,7 @@ What have I done!?
 
 The lines made a perfect little red swastika in the middle of my screen! Luckily I chose to rotate the shape in a direction that resulted in a reversed swastika (Close call).
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![Accidental swastika shape](https://github.com/Hannoob/3DMaths/blob/master/images/fail.bmp "Accidental swastika shape")
 
 This is because even though, the coordinates have to be rendered as integers, they can really be any decimal value, especially when using the trigonometric functions.
 So I quickly fixed these issues, and added some styling and colour changes, and sure enough, my cube was rotating nicely.
@@ -165,7 +165,7 @@ formGraphics.FillRectangle(myBrush, new Rectangle((int)warpedX + centerX, (int)w
 I would simply make the x and y coordinates smaller based on the z coordinates + the camera distance.
 One thing that I saw almost immediately was that, if I had to divide by the distance from the camera in pixels, things would collapse into the centre way too quickly. That is why I introduced a “warping factor” to help reduce the rate at which things get smaller. I randomly picked a value of 0.002, rand the code for the first time and, remarkably, it gave great results!
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![Success](https://github.com/Hannoob/3DMaths/blob/master/images/success.bmp "Success")
 
 First try! That literally never happens!
 
