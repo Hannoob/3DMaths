@@ -36,7 +36,7 @@ private void btnBox_Click(object sender, EventArgs e)
 ```
 
 The next thing on the agenda would be to see if I can get these points rendered on the screen.
-This would happen in a simple method called RenderCoordinates(), that consists mostly of code copied verbatim from [this](https://docs.microsoft.com/en-us/dotnet/framework/winforms/advanced/how-to-draw-a-filled-rectangle-on-a-windows-form) site.
+This would happen in a simple method called `RenderCoordinates()`, that consists mostly of code copied verbatim from [this](https://docs.microsoft.com/en-us/dotnet/framework/winforms/advanced/how-to-draw-a-filled-rectangle-on-a-windows-form) site.
 
 Rendering these points would be easy, since the first step would be to use simple isometric shapes, meaning that there would be no “perspective”, I could simply ignore the Z coordinate of each point and only render the X and Y coordinates!
 These coordinated are adjusted such that the (0,0) coordinate is in the middle of the screen instead of the top left corner, and since the coordinates are already int values, I did not even have to round them to the nearest integer in order to render them!
