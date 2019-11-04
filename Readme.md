@@ -122,7 +122,7 @@ The lines made a perfect little red swastika in the middle of my screen! Luckily
 
 I will not display it here though. Just to be safe.
 
-[//]: # ![Accidental swastika shape](https://github.com/Hannoob/3DMaths/blob/master/images/fail.bmp "Accidental swastika shape")
+[//]: # (![Accidental swastika shape](https://github.com/Hannoob/3DMaths/blob/master/images/fail.bmp "Accidental swastika shape"))
 
 This is because even though, the coordinates have to be rendered as integers, they can really be any decimal value, especially when using the trigonometric functions.
 So I quickly fixed these issues, and added some styling and colour changes, and sure enough, my cube was rotating nicely.
